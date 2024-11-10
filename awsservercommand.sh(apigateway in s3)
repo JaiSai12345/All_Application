@@ -1,0 +1,23 @@
+[root@ip-172-31-86-238 PharmEtrade_ApiGateway]# history
+   25      1  pwd
+   26      2  sudo yum install git docker -y
+   27      3  docker --version
+   28      4  git clone https://github.com/Mandalasai90/PharmEtrade_ApiGateway.git
+   29      5  ll
+   30      6  cd PharmEtrade_ApiGateway/
+   31      7  ll
+   32      8  docker build -t pharmetrade-apigateway .
+   33      9  cd PharmEtrade_ApiGateway
+   34     10  ll
+   35     11  docker build -t pharmetrade-apigateway .
+   36     12  cd ..
+   37     13  ll
+   38     14  cls
+   39     15  clear
+   40     16  ll
+   41     17  sudo systemctl start docker
+   42     18  sudo systemctl enable docker
+   43     19  sudo systemctl status docker
+   44     20  docker build -t pharmetrade-apigateway .
+   45     21  docker images
+   46     22  docker run -d -p 5000:5000 pharmetrade-apigateway
